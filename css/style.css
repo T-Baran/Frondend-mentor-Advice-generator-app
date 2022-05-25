@@ -45,10 +45,16 @@ html {
   text-align: center;
 }
 
+@media (min-width: 500px) {
+  .container {
+    height: 40vh;
+  }
+}
+
 .container p {
   color: #52ffa8;
   font-size: 12px;
-  margin-top: 30px;
+  margin-top: 45px;
   letter-spacing: 4px;
 }
 
@@ -57,25 +63,32 @@ html {
 }
 
 .container h2 {
-  margin-top: 30px;
+  margin-top: 45px;
   color: #cee3e9;
   width: 90%;
   margin-inline: auto;
 }
 
-.container h2::before,
-.container h2::after {
-  content: '"';
-}
-
 .container .dividers {
   position: absolute;
-  bottom: 50px;
+  bottom: 60px;
   width: 100%;
 }
 
 .container .dividers #imgDesktop {
   display: none;
+}
+
+@media (min-width: 500px) {
+  .container .dividers #imgDesktop {
+    display: inline;
+  }
+}
+
+@media (min-width: 500px) {
+  .container .dividers #imgMobile {
+    display: none;
+  }
 }
 
 .container button {
@@ -99,5 +112,10 @@ html {
   background-color: #52ffa8;
   border: none;
   cursor: pointer;
+}
+
+.container button:hover {
+  -webkit-box-shadow: 0 0 30px 0px #52ffa8;
+          box-shadow: 0 0 30px 0px #52ffa8;
 }
 /*# sourceMappingURL=style.css.map */
