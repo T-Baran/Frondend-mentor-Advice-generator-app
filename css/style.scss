@@ -1,0 +1,97 @@
+.attribution {
+  font-size: 7px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+//above frondend mentor css code
+//my css starts there
+
+$color: (
+  lCyan: hsl(193, 38%, 86%),
+  nGreen: hsl(150, 100%, 66%),
+  gBlue: hsl(217, 19%, 38%),
+  dGrayis: hsl(217, 19%, 24%),
+  dBlue: hsl(218, 23%, 16%),
+);
+$bRadius: 20px;
+$fSize: 18px;
+@function color($choose) {
+  @return map-get($color, $choose);
+}
+html {
+  font-size: $fSize;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.main-container {
+  background-color: color(dBlue);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 50vh;
+  width: Min(90vw, 600px);
+  background-color: color(dGrayis);
+  border-radius: $bRadius;
+  position: relative;
+  text-align: center;
+
+  p {
+    color: color(nGreen);
+    font-size: 12px;
+    margin-top: 30px;
+    letter-spacing: 4px;
+
+    span::before {
+      content: "#";
+    }
+  }
+  h2 {
+    margin-top: 30px;
+    color: color(lCyan);
+    width: 90%;
+    margin-inline: auto;
+  }
+  h2::before,
+  h2::after {
+    content: '"';
+  }
+  .dividers {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+
+    #imgDesktop {
+      display: none;
+    }
+  }
+  button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: color(nGreen);
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+  }
+}
