@@ -4,7 +4,9 @@ const button = document.querySelector("#button");
 
 async function getAdvice() {
   try {
-    const response = await fetch("https://api.adviceslip.com/advice");
+    const response = await fetch("https://api.adviceslip.com/advice", {
+      cache: "no-store",
+    });
     const data = await response.json();
     advice.textContent = `"${data.slip.advice}"`;
     adviceNumber.textContent = data.slip.id;

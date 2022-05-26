@@ -15,7 +15,11 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ## Overview
 
-I made this advice generator app based on advice API, It works fine on Chrome and Edge but i dont know why it doesn't work on Firefox
+I made this advice generator app based on advice API, It works fine on Chrome, Edge and Firefox
+
+<!-- but i dont know why it doesn't work on Firefox -->
+
+Thanks to @msunji for helping me with the problem on Firefox
 
 ### The challenge
 
@@ -35,8 +39,7 @@ Users should be able to:
 
 ### What I learned
 
-I am learning SASS preprocessor, this simple website helped me a lot. I also used data from API to generate advices on this website. On of the problems that i get with this website is this that the advice generator doesn't work on Firefox and I don't know why
-(If you know please tell me so i will be able to make it better next time)
+I am learning SASS preprocessor, this simple website helped me a lot. I also used data from API to generate advices on this website.
 
 ### Continued development
 
